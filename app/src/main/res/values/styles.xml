@@ -9,6 +9,6 @@
     <!--theme without actionbar-->
     <style name="AppThemNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 </resources>
