@@ -7,7 +7,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <!--theme without actionbar-->
-    <style name="AppThemNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppThemNoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
