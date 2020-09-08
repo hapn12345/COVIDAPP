@@ -64,7 +64,6 @@ public class HomeFragment extends Fragment {
     public void onResume() {
         super.onResume();
         loadHomeData();
-
     }
 
     private void loadHomeData(){
