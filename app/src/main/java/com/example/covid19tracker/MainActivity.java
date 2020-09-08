@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         refreshBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                homeFragment.onResume();
             }
         });
 
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         homeFragment = new HomeFragment();
         statsFragments = new StatsFragment();
 
+        // call fragmentManager in android.support.v4.app
         fragmentManager = getSupportFragmentManager();
         activeFragment = homeFragment;
 
