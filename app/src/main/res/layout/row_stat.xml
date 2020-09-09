@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/countryTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Nước"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/countryTv">
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trường hợp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/casesTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:text="-"
+                    android:textColor="@color/colorBlack"/>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ca nhiễm hôm nay"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/todayCasesTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:text="-"
+                    android:textColor="@color/colorBlack"/>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số ca tử vong"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/deathsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:text="-"
+                    android:textColor="@color/colorRed"/>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số ca tử vong hôm nay"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/todayDeathsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:text="-"
+                    android:textColor="@color/colorRed"/>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số ca chữa khỏi"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/recoveredTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:text="-"
+                    android:textColor="@color/colorGreen"/>
+            </TableRow>
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số ca chữa khỏi hôm nay"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/todayRecoveredTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:text="-"
+                    android:textColor="@color/colorGreen"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
