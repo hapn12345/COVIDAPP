@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             @Override
             public void onClick(View v) {
                 homeFragment.onResume();
+                statsFragments.onResume();
             }
         });
 
